@@ -1,27 +1,12 @@
-# Phase 2 Project Description
 
-Another module down - you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-v2-3/main/halfway-there.gif)
-
-All that remains in Phase 2 is to put your newfound data science skills to use with a large project!
-
-In this project description, we will cover:
-
-* Project Overview: the project goal, audience, and dataset
-* Deliverables: the specific items you are required to produce for this project
-* Grading: how your project will be scored
-* Getting Started: guidance for how to begin working
 
 ## Project Overview
 
-For this project, you will use multiple linear regression modeling to analyze house sales in a northwestern county.
+
 
 ### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
-
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
 
 ### The Data
 
