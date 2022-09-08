@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The goal of this project is to use linear regression analysis of data on houses sold in King County so as to provide a final product to deliver to a apparaisal company (Reynolds and Klein). 
+The goal of this project is to use linear regression analysis of data on houses sold in King County so as to provide a final product to deliver to an apparaisal company (Reynolds and Klein). 
 
 ### Business Problem
 
@@ -23,28 +23,27 @@ The house prices in the data range as per the following below
 
 We used Linear Regression modeling to craft a model that would be suitable to provide to the client. 
 
-We started by cleaning the data of nulls and odd inputs. The categorical data columns were converted to numeric data in order to be fed into our models. We then created 4 different models through statsmodel to determine what type of data manipulation works best in accounting for the most amount of variance. These models were:
+We started by cleaning the data of nulls and odd inputs. The categorical data columns were converted to numeric data in order to be fed into our models. 
+
+
+We then created 4 different models through statsmodel to determine what type of data manipulation works best according to the model coefficients and scores. These models ended up receiving the following R Squared results:
 
 Model1 _ Initial Cleaned Data _ R Squared: 0.689
 Model2 _ Lower and upper residuals removed _ R Squared: 0.654
 Model3 _ Log Transform _ R Squared: 0.672
 Model4 _ MinMax Scaling _ R Squared: 0.270
 
-Based on the R squared, we pulled the first model we created to use in our Test Train model in sklearn.
+Based on the R squared and normality tests (Jarque Bera, and Omnibus), we used Model3 in our regression model. Prior to moving onto regression modeling, we explored our chosen dataset by plotting different aspects in order to get a good idea of what kind of data we are working with. We started with creating scatter plots to show each feature vs the house price:
 
-To provide the client with some insight on the data, we created a correlation plot to show that there are 5 categories which are the most strongly related to the price of a house. These include sqft_living, sqft_above, sqft_living15, latitude, and bathrooms.
+![My Image](images/House-Price_vs_Features.png)
+
+Next we plot the correlation of each feature using a barplot. In plotting this we discovered that there are 5 categories which are the most strongly related to the price of a house. These include sqft_living, sqft_above, sqft_living15, latitude, and bathrooms.
 
 ![My Image](images/Price-Correlation.png)
 
-
-In addition, we created a tornado diagram to show the change in price with each unit change in each of the categories
+Finally, we created a tornado diagram to show the change in price with each unit change in each of the categories
 
 ![My Image](images/Tornado-Diagram.png)
-
-
-Finally, we plotted the house price vs each of the features to have a general idea of what the correlation might look like
-
-![My Image](images/House-Price_vs_Features.png)
 
 
 ## Regression Results
@@ -60,9 +59,9 @@ Model_Poly2 _ 2 degree polynomial model _ all features _ 0.747 _ 0.734
 
 ### Conclusions
 
-The second degree polynomial regression model really fit the data the best out of our models. We were able to account for around 73.4 of the variance in the data itself, which would definitely be a good "goodness of fit" to present to the client. In addition, we know the accuracy is where is should be due to the J We should communication to the client that the model is not a fullproof way to determine the price of a house. There are other variables not present in the dataset that could affect this price. Given that, this model should work for their use case in training new employees and current employees.
+The second degree polynomial regression model really fit the data the best out of all our tested models. We were able to account for around 73.4 of the variance in the data itself, which would definitely be a good "goodness of fit" to present to the client. In addition, we know the accuracy is where is should be due to the normality scores received on the statsmodels. We should communication to the client that the model is not a fullproof way to determine the price of a house. There are other variables not present in the dataset that could affect this price. Given that, this model should work for their use case in training new employees and current employees.
 
-If the client is looking for a more defined set, we can utlize methods detailed in the Next steps to refine the model.
+If the client is looking for a more defined set, we can utlize methods detailed in the Next steps section to refine the model.
 
 
 ### Next Steps
