@@ -29,8 +29,11 @@ We started by cleaning the data of nulls and odd inputs. The categorical data co
 We then created 4 different models through statsmodel to determine what type of data manipulation works best according to the model coefficients and scores. These models ended up receiving the following R Squared results:
 
 Model1 _ Initial Cleaned Data _ R Squared: 0.689
+
 Model2 _ Lower and upper residuals removed _ R Squared: 0.654
+
 Model3 _ Log Transform _ R Squared: 0.672
+
 Model4 _ MinMax Scaling _ R Squared: 0.270
 
 Based on the R squared and normality tests (Jarque Bera, and Omnibus), we used Model3 in our regression model. Prior to moving onto regression modeling, we explored our chosen dataset by plotting different aspects in order to get a good idea of what kind of data we are working with. We started with creating scatter plots to show each feature vs the house price:
@@ -53,7 +56,9 @@ We created three test train models in sklearn. Here is a brief overview of them:
 Model Name _ type of regression _ features used _ train score _ test score
 
 Baseline Model _ 1 degree polynomial model _ sqft_living _ 0.370 _ 0.350
+
 Model_Poly3 _ 3 degree polynomial model _ all features _ 0.754 _ -20.1
+
 Model_Poly2 _ 2 degree polynomial model _ all features _ 0.747 _ 0.734
 
 
