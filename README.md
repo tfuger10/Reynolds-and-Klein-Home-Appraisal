@@ -64,9 +64,9 @@ Model_Poly2 _ 2 degree polynomial model _ all features _ 0.747 _ 0.734
 
 ### Conclusions
 
-The second degree polynomial regression model really fit the data the best out of all our tested models. We were able to account for around 73.4 of the variance in the data itself, which would definitely be a good "goodness of fit" to present to the client. In addition, we know the accuracy is where is should be due to the normality scores received on the statsmodels. We should communication to the client that the model is not a fullproof way to determine the price of a house. There are other variables not present in the dataset that could affect this price. Given that, this model should work for their use case in training new employees and current employees.
+The second degree polynomial regression model really fit the data the best out of all our tested models. We were able to account for around 73.4 of the variance in the data itself, which would definitely be a good "goodness of fit" to present to the client. In addition, we know the accuracy is where is should be due to the normality scores received on the statsmodels. We should communication to the client that the model is not a fullproof way to determine the price of a house as by the end of our notebook, we see that our mean absolute error is $109,000 which is not ideal. There are other variables not present in the dataset that could affect this price. Given that, this model should work for their use case in training new employees and current employees.
 
-If the client is looking for a more defined set, we can utlize methods detailed in the Next steps section to refine the model.
+If the client is looking for a more defined set, we can utlize methods detailed in the Next steps section to refine the model and minimize the error.
 
 
 ### Next Steps
