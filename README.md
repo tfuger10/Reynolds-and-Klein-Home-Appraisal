@@ -92,7 +92,7 @@ For additional info, contact Tim Fuger at tfuger10@gmail.com
 
 In this repository you will find 5 files to take note of:
 
-- [Jupyter Notebook](Notebook.ipynb) contains all of the code for this project
+- [EDA_modeling_evaluation](EDA_modeling_evaluation.ipynb) contains all of the code for this project
 
 - [kc_house_data](data/kc_house_data.csv) contains the data from King County Assessors office on about 21000 homes purchased in the king county area.
 
@@ -100,6 +100,6 @@ In this repository you will find 5 files to take note of:
 
 - [images](images) folder contains all the images that are usedd in the markdown file
 
-- [Reynolds-and-Klein_House-Appraisal-Predictions](Reynolds-and-Klein_House-Appraisal-Predictions.pptx) powerpoint file
+- [Reynolds-and-Klein_House-Appraisal-Predictions](presentation/Reynolds-and-Klein_House-Appraisal-Predictions.pptx) powerpoint file
 
-- [Reynolds-and-Klein_House-Appraisal-Predictions](Reynolds-and-Klein_House-Appraisal-Predictions.pdf) pdf file
+- [Reynolds-and-Klein_House-Appraisal-Predictions](presentation/Reynolds-and-Klein_House-Appraisal-Predictions.pdf) pdf file
